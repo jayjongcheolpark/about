@@ -1,0 +1,109 @@
+$color-violet: #a626a4;
+$color-green: #50a14f;
+$color-red: #e45649;
+$color-blue: #0184bc;
+$color-gold: #986801;
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.violet {
+  color: $color-violet;
+}
+
+.gold {
+  color: $color-gold;
+}
+
+h2,
+.green {
+  color: $color-green;
+}
+
+.red {
+  color: $color-red;
+}
+
+.sml-txt {
+  font-size: 0.8rem;
+}
+
+.Experience {
+  padding: 30px 30px 0 30px;
+  grid-area: Experience;
+}
+
+.Overview {
+  max-width: 618px;
+  padding: 30px 30px 0 30px;
+  grid-area: Overview;
+}
+
+.Education {
+  padding: 30px 30px 0 30px;
+  grid-area: Education;
+}
+.header {
+  padding: 30px 30px 0 30px;
+  grid-area: header;
+}
+
+.Resume {
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "Overview Overview"
+    "Experience Experience"
+    "Education Education";
+}
+
+.javafx {
+  width: 80px;
+  height: 40px;
+}
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+
+@media screen and (min-width: 720px) {
+  .Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+  .Resume {
+    padding: 30px;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "Overview Overview Overview Overview"
+      "Experience Experience Education Education";
+  }
+}
+
+
