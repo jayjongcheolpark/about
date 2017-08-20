@@ -9,11 +9,11 @@ const Resume = () => {
       <div className="header">
         <h1>Jay Park</h1>
       </div>
-      <Overview />
-      <Experience />
-      <Education />
+      <Overview/>
+      <Experience/>
+      <Education/>
     </div>
   )
 }
 
-export default Resume 
+export default Resume
